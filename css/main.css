@@ -26,18 +26,18 @@ body {
 }
 
 main {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .card {
     border-radius: 1em;
     background: #fff;
-    max-width: 28rem;
+    max-width: 26rem;
     margin: 0 auto;
 }
 
-.card img {
+.card__hero {
     width: 100%;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
@@ -45,11 +45,29 @@ main {
 
 .card__details {
     padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 900;
+    
+    color: var(--clr-neutral-dark-blue);
+}
+
+.lead {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--clr-neutral-desat-blue);
+    line-height: 1.75;
 }
 
 
 /* DEFAULT STYLES FROM FRONTEND MENTOR */
 .attribution {
+    margin-top: 1rem;
     font-size: 11px;
     text-align: center;
 }
@@ -60,6 +78,9 @@ main {
 
 @media (min-width: 60em) {
     body {
-        background: green;
+        background-color: var(--clr-primary-pale-blue);
+    background-image: url('../images/pattern-background-desktop.svg');
+        background-position: top left;
+        background-size: contain;
     }
 }
