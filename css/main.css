@@ -1,0 +1,27 @@
+:root {
+    --clr-primary-pale-blue: hsl(225, 100%, 94%);
+    --clr-primary-blue: hsl(245, 75%, 52%);
+
+    --clr-neutral-dark-blue: ;
+    --clr-neutral-pale-blue: ;
+    --clr-neutral-desat-blue: ;
+
+    --fs-body: 1rem;
+
+    --ff-red-hat: 'Red Hat Display', sans-serif;
+}
+
+body {
+    font-family: var(--ff-red-hat);
+}
+
+
+/* DEFAULT STYLES */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
