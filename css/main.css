@@ -2,9 +2,9 @@
     --clr-primary-pale-blue: hsl(225, 100%, 94%);
     --clr-primary-blue: hsl(245, 75%, 52%);
 
-    --clr-neutral-dark-blue: ;
-    --clr-neutral-pale-blue: ;
-    --clr-neutral-desat-blue: ;
+    --clr-neutral-dark-blue: hsl(223, 47%, 23%);
+    --clr-neutral-pale-blue: hsl(225, 100%, 98%);
+    --clr-neutral-desat-blue: hsl(224, 23%, 55%);
 
     --fs-body: 1rem;
 
@@ -13,10 +13,42 @@
 
 body {
     font-family: var(--ff-red-hat);
+    background-color: var(--clr-primary-pale-blue);
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 1em;
+    background: #fff;
+    max-width: 28rem;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.card__details {
+    padding: 2em;
 }
 
 
-/* DEFAULT STYLES */
+/* DEFAULT STYLES FROM FRONTEND MENTOR */
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -24,4 +56,10 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 60em) {
+    body {
+        background: green;
+    }
 }
