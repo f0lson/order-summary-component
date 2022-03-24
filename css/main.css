@@ -5,7 +5,7 @@
     --clr-neutral-dark-blue: hsl(223, 47%, 23%);
     --clr-neutral-pale-blue: hsl(225, 100%, 98%);
     --clr-neutral-desat-blue: hsl(224, 23%, 55%);
-    --clr-neutral-purple: #766CF1;
+    --clr-neutral-purple: hsl(245, 83%, 68%);
 
     --fs-body: 1rem;
 
@@ -117,13 +117,14 @@ main {
     border-radius: .85em;
     margin-bottom: 2em;
     box-shadow: 0px 5px 20px -5px var(--clr-neutral-desat-blue);
-    transition: background-color 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .proceed-btn:hover,
 .proceed-btn:active,
 .proceed-btn:focus {
     background: var(--clr-neutral-purple);
+    box-shadow: 0px 5px 20px -5px var(--clr-neutral-desat-blue);
 }
 
 .cancel-btn {
